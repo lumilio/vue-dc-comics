@@ -1,32 +1,39 @@
 <template>
-  <div class="hello">
-      xxx
-  </div>
+    <div class="box-C1">
+        <div class="layout-box">
+            <div class="centered-box">
+                Contents goes here ...
+            </div>
+        </div>
+    </div>
 </template>
+
+
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'C2',
+  components:{},
   props: {
     msg: String
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+@import '../assets/scss/variables.scss';
+.box-C1{
+    @include layout-block-1;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.layout-box{
+    @include layout-block-1;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.centered-box{
+    @include layout-block-2;
+    height: 95px;
+    font-size: large;
+    color: white;
 }
 </style>
