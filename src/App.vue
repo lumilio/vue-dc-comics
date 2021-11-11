@@ -9,6 +9,9 @@
   
 </template>
 
+
+
+
 <script>
 
 import C1 from './components/Headermenu.vue'
@@ -16,8 +19,6 @@ import C2 from './components/Contentbox.vue'
 import C3 from './components/Banner.vue' 
 import C4 from './components/Listbox.vue' 
 import C5 from './components/Footermenu.vue'  
-
-
 
 export default {
   name: 'App',
@@ -31,11 +32,16 @@ export default {
 }
 </script>
 
+
+
+
+
+
 <style lang="scss">
+
 #app {
-
     @import './assets/scss/variables.scss';
-    @import './assets/scss/common.scss';
-
+    background-color: $sie-color-1;
 }
+
 </style>

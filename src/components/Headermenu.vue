@@ -1,7 +1,17 @@
 <template>
-  <div class="hello">
+  <div class="box-C1">
+      <div class="layout-box">
+          <div class="centered-box">
+                <img src="../assets/img/dc-logo.png" alt="">
+                <div>xxx</div>
+          </div>
+          
+      </div>
   </div>
 </template>
+
+
+
 
 <script>
 export default {
@@ -12,20 +22,26 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+
+
+
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+@import '../assets/scss/variables.scss';
+.box-C1{
+    @include layout-block-1;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.layout-box{
+    @include layout-block-1;
+    margin-top: 1rem;
+    background-color: white;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.centered-box{
+    @include layout-block-2;
+    justify-content: space-between;
 }
-a {
-  color: #42b983;
+.centered-box img{
+    width: 100px;
+    height: 100px;
 }
 </style>
