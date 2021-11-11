@@ -1,30 +1,37 @@
 <template>
   <div id="app">
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <C1/>
+    <C2/>
+    <C3/>
+    <C4/>
+    <C5/>
   </div>
   
 </template>
 
 <script>
 
+import C1 from './components/Headermenu.vue'
+import C2 from './components/Contentbox.vue' 
+import C3 from './components/Banner.vue' 
+import C4 from './components/Listbox.vue' 
+import C5 from './components/Footermenu.vue'  
+
+
 
 export default {
   name: 'App',
   components: {
-
+      C1,
+      C2,
+      C3,
+      C4,
+      C5,
   }
 }
 </script>
 
 <style lang="scss">
 #app {
-/*   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px; */
 }
 </style>
