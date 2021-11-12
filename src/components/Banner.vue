@@ -43,14 +43,30 @@ export default {
 }
 .layout-box{
     @include layout-block-1;
-
     background-color: $sie-color-2;
 }
 .centered-box{
     @include layout-block-2;
+}
+#banner-list{
+    padding: 0;
+    display: flex;
+    margin: 20px 0;
     justify-content: space-between;
+    width: 100%;
+}
+#banner-list > li {
+    display: inline-block;
+    font-size: 13px;
+}
+#banner-list a {
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: none;
 }
 #banner-list > li > a img{
-    width: 100px;
+    height: 37px ;
+    padding: 10px;
 }
 </style>
