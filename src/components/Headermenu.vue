@@ -48,6 +48,9 @@ export default {
     width: 67px;
     height: 67px;
 }
+#header-logo:hover{
+    cursor: pointer;
+}
 #header-list{
     margin: 0;
 }
@@ -65,6 +68,7 @@ export default {
 }
 #header-list li:hover{
     border-bottom: 5px solid $sie-color-2;
+    cursor: pointer;
 }
 #header-list li:hover > a{
     color: $sie-color-2;

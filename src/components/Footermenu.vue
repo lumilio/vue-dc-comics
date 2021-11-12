@@ -2,10 +2,10 @@
     <div class="box-C5">
         <div class="layout-box">
             <div class="centered-box">
-                <button>xxxx</button>
-                <div>
-                    <a href="#">FOLLOW US</a>
-                    <ul id='header-list'>
+                <button>SING-UP NOW!</button>
+                <div class="follow-links">
+                    <a id='followtag' href="#"><b>FOLLOW US</b></a>
+                    <ul id='footer-list'>
                         <li v-for="link in links" v-bind:key="link.id"> <a href="#"><img :src="require(`../assets/img/${link}`)" alt=""></a></li>
                     </ul>
                 </div>
@@ -41,8 +41,9 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/scss/variables.scss';
-.box-C1{
+.box-C5{
     @include layout-block-1;
+    z-index: 100;
 }
 .layout-box{
     @include layout-block-1;
@@ -52,28 +53,34 @@ export default {
 .centered-box{
     @include layout-block-2;
     justify-content: space-between;
+    
 }
-#header-logo{
-    width: 67px;
-    height: 67px;
+.centered-box button{
+    padding: 10px;
+    color: white;
+    border: 1px solid $sie-color-2;
+    background-color: #303030; 
 }
-#header-list{
-    margin: 0;
+.centered-box button:hover{
+    background-color: $sie-color-2; 
+    cursor: pointer;
 }
-#header-list li{
+#footer-list{
+    margin: 27px 0;
+}
+#footer-list li{
     display: inline-block;
-    margin: 0 14px;
+    margin: 0 8px;
 }
-#header-list a{
+#footer-list a img{
+    width: 27px;
+}
+.follow-links{
+    display: flex;
+    align-items: center;
+}
+#followtag{
     text-decoration: none;
-    font-size: 11px;
-    line-height: 85px;
-    color: $sie-color-1;
-}
-#header-list li:hover{
-    border-bottom: 5px solid $sie-color-2;
-}
-#header-list li:hover > a{
     color: $sie-color-2;
 }
 </style>

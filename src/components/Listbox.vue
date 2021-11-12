@@ -89,7 +89,6 @@ export default {
     background-position-x: center;
     background-size: cover;
     /* background-repeat: no-repeat */
-    z-index: -2
 }
 .centered-box{
     width: 1140px;
@@ -98,7 +97,7 @@ export default {
     color: white;
 }
 .mini-list{
-    margin: 30px 70px 40px 0px;
+    margin: 30px 70px 62px 0px;
 }
 .centered-box h3{
     margin-bottom: 0;
