@@ -22,17 +22,17 @@ export default {
 
 <style scoped lang="scss">
 .card-model {
-padding: 0.6rem;
+    padding: 0.6rem;
 }
 .card-model img{
-width: 170px;
-height: 170px;
-object-fit: cover;
-object-position: center top;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: center top;
 }
 .card-model p{
-width: 120px;
-margin-top: 8px;
-margin-bottom: 16px;
+    width: 120px;
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 </style>
