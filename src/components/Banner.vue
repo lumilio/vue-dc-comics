@@ -14,7 +14,7 @@
 
 <script>
 
-import Card from './Cardmodel.vue'
+import Card from './IconBannerModel.vue'
 
 export default {
   name: 'C3',

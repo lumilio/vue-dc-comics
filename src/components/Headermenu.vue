@@ -34,11 +34,16 @@ export default {
 @import '../assets/scss/variables.scss';
 .box-C1{
     @include layout-block-1;
+    position: sticky;
+    top: 0;
 }
 .layout-box{
     @include layout-block-1;
-    margin-top: 1rem;
+    position: sticky;
+    top: 0;
+    border-top: 15px solid $sie-color-1;
     background-color: white;
+
 }
 .centered-box{
     @include layout-block-2;

@@ -1,9 +1,11 @@
 <template>
     <div class="box-C2">
         <div class="layout-box">
-            <div class="centered-box">
-                Contents goes here ...
+            <div>
+
             </div>
+            <div class="centered-box jumbo"></div>
+            <div class="centered-box">sss</div>
         </div>
     </div>
 </template>
@@ -107,11 +109,21 @@ export default {
 }
 .layout-box{
     @include layout-block-1;
+    flex-direction: column;
+    align-items: center
 }
 .centered-box{
     @include layout-block-2;
+    justify-content: center;
     height: 95px;
     font-size: large;
     color: white;
+}
+.jumbo{
+    @include layout-block-1;
+    background-image: url('../assets/img/jumbotron.jpg') ;
+    height: 300px;
+
+    /* background-repeat: no-repeat */
 }
 </style>

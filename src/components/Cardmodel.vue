@@ -1,17 +1,29 @@
 <template>
-    <li>  <a href="#"><img :src="require(`../assets/img/${image}`)" alt="">{{label}}</a></li>
+    <div class="box-C1">
+        <div class="layout-box">
+            <div class="centered-box">
+                <img id='header-logo' src="../assets/img/dc-logo.png" alt="">
+                <ul id='header-list'>
+                    <li v-for="Menuitem in Menulist" v-bind:key="Menuitem"> <a href="#">{{Menuitem}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </template>
 
 
 
 <script>
 export default {
-  name: 'C3-1',
+  name: 'C1',
   components:{},
+    data() {
+        return {
+            Menulist: ['CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS','SHOP',]
+        };
+    },
   props: {
-    image: String,
-    label: String,
-
+    msg: String
   }
 }
 </script>
@@ -19,18 +31,4 @@ export default {
 
 
 <style scoped lang="scss">
-li {
-    display: inline-block;
-    font-size: 13px;
-}
-a {
-    display: flex;
-    color: white;
-    align-items: center;
-    text-decoration: none;
-}
-li > a > img{
-    height: 37px ;
-    padding: 10px;
-}
 </style>
