@@ -60,18 +60,4 @@ export default {
     justify-content: space-between;
     width: 100%;
 }
-#banner-list > li {
-    display: inline-block;
-    font-size: 13px;
-}
-#banner-list a {
-    display: flex;
-    color: white;
-    align-items: center;
-    text-decoration: none;
-}
-#banner-list > li > a img{
-    height: 37px ;
-    padding: 10px;
-}
 </style>

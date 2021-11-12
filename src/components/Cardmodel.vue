@@ -1,5 +1,5 @@
 <template>
-    <li>  <a href="#"><img :src="image" alt="">{{label}}</a></li>
+    <li>  <a href="#"><img :src="require(`../assets/img/${image}`)" alt="">{{label}}</a></li>
 </template>
 
 
@@ -20,16 +20,18 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/scss/variables.scss';
-.box-C2{
-    @include layout-block-1;
+li {
+    display: inline-block;
+    font-size: 13px;
 }
-.layout-box{
-    @include layout-block-1;
-}
-.centered-box{
-    @include layout-block-2;
-    height: 95px;
-    font-size: large;
+a {
+    display: flex;
     color: white;
+    align-items: center;
+    text-decoration: none;
+}
+li > a img{
+    height: 37px ;
+    padding: 10px;
 }
 </style>
