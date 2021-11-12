@@ -1,12 +1,16 @@
 <template>
     <div class="box-C2">
+        <div class="layout-box jumbo"></div>
         <div class="layout-box">
-            <div>
-
+            <div class="centered-box">
+                <div>xxx</div>
+                <div>xxxx</div>
+                <button>xxx</button>
             </div>
-            <div class="centered-box jumbo"></div>
-            <div class="centered-box">sss</div>
         </div>
+
+
+
     </div>
 </template>
 
@@ -106,11 +110,11 @@ export default {
 @import '../assets/scss/variables.scss';
 .box-C2{
     @include layout-block-1;
+    flex-direction: column;
+    align-items: center
 }
 .layout-box{
     @include layout-block-1;
-    flex-direction: column;
-    align-items: center
 }
 .centered-box{
     @include layout-block-2;
@@ -120,10 +124,10 @@ export default {
     color: white;
 }
 .jumbo{
-    @include layout-block-1;
     background-image: url('../assets/img/jumbotron.jpg') ;
-    height: 300px;
-
+    height: 400px;
+    background-position-y: top;
+    background-position-x: center;
     /* background-repeat: no-repeat */
 }
 </style>
