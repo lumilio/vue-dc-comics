@@ -19,7 +19,6 @@ export default {
 
 
 <style scoped lang="scss">
-@import '../assets/scss/variables.scss';
 li {
     display: inline-block;
     font-size: 13px;
@@ -30,7 +29,7 @@ a {
     align-items: center;
     text-decoration: none;
 }
-li > a img{
+li > a > img{
     height: 37px ;
     padding: 10px;
 }
