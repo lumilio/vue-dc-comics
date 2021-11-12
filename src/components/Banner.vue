@@ -3,7 +3,7 @@
         <div class="layout-box">
             <div class="centered-box">
                 <ul id='banner-list'>
-                    <Card v-for="Banneritem in Bannerlist" v-bind:key="Banneritem.id" :image="Banneritem.image" :label='Banneritem.label'/>  
+                    <Icon v-for="Banneritem in Bannerlist" v-bind:key="Banneritem.id" :image="Banneritem.image" :label='Banneritem.label'/>  
                 </ul>
             </div>
         </div>
@@ -14,12 +14,12 @@
 
 <script>
 
-import Card from './IconBannerModel.vue'
+import Icon from './IconBannerModel.vue'
 
 export default {
   name: 'C3',
   components:{
-      Card,
+      Icon,
   },
       data() {
         return {

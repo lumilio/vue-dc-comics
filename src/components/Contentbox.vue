@@ -3,8 +3,10 @@
         <div class="layout-box jumbo"></div>
         <div class="layout-box">
             <div class="centered-box">
-                <div>xxx</div>
-                <div>xxxx</div>
+                <span>CURRENT SERIES</span>
+                <div class="card-container">
+                    <Card v-for="Card in Cardlist" v-bind:key="Card.id" :thumb="Card.thumb" :series='Card.series'/>
+                </div>
                 <button>xxx</button>
             </div>
         </div>
@@ -17,12 +19,17 @@
 
 
 <script>
+
+import Card from './ModelCard.vue'
+
 export default {
   name: 'C2',
-  components:{},
+  components:{
+      Card,
+  },
     data() {
         return {
-            Bannerlist: [
+            Cardlist: [
                 {
                     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
                     "price": "$19.99",
@@ -119,7 +126,8 @@ export default {
 .centered-box{
     @include layout-block-2;
     justify-content: center;
-    height: 95px;
+    flex-direction: column;
+    align-items: center;
     font-size: large;
     color: white;
 }
@@ -129,5 +137,9 @@ export default {
     background-position-y: top;
     background-position-x: center;
     /* background-repeat: no-repeat */
+}
+.card-container{
+    display: flex;
+    font-size: small;
 }
 </style>
