@@ -14,7 +14,6 @@
 
 
 <script>
-
 export default {
   name: 'C1',
   components:{},

@@ -1,32 +1,56 @@
 <template>
-  <div class="hello">
-      xxx
-  </div>
+    <div class="box-C3">
+        <div class="layout-box">
+            <div class="centered-box">
+                <ul id='banner-list'>
+                    <li v-for="Banneritem in Bannerlist" v-bind:key="Banneritem.id">  <a href="#"><img :src="require(`../assets/img/${Banneritem.image}`)" alt="">{{Banneritem.label}}</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
 </template>
+
+
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'C3',
+  components:{},
+      data() {
+        return {
+            Bannerlist: [
+                { label: 'DIGITAL COMICS', image: 'buy-comics-digital-comics.png' },
+                { label: 'DC MERCHANDISE', image: 'buy-comics-merchandise.png' },
+                { label: 'SUBSCRIPTION', image: 'buy-comics-subscriptions.png' },
+                { label: 'COMIC SHOP LOCATOR', image: 'buy-comics-shop-locator.png' },
+                { label: 'DC POWER VISA', image: 'buy-dc-power-visa.svg' },
+            ]
+        };
+    },
   props: {
     msg: String
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+@import '../assets/scss/variables.scss';
+.box-C3{
+    @include layout-block-1;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.layout-box{
+    @include layout-block-1;
+
+    background-color: $sie-color-2;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.centered-box{
+    @include layout-block-2;
+    justify-content: space-between;
 }
-a {
-  color: #42b983;
+#banner-list > li > a img{
+    width: 100px;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="box-C1">
+    <div class="box-C2">
         <div class="layout-box">
             <div class="centered-box">
                 Contents goes here ...
@@ -24,7 +24,7 @@ export default {
 
 <style scoped lang="scss">
 @import '../assets/scss/variables.scss';
-.box-C1{
+.box-C2{
     @include layout-block-1;
 }
 .layout-box{
