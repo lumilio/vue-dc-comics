@@ -141,5 +141,8 @@ export default {
 .card-container{
     display: flex;
     font-size: small;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
 }
 </style>
