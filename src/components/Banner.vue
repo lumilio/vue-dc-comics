@@ -3,8 +3,7 @@
         <div class="layout-box">
             <div class="centered-box">
                 <ul id='banner-list'>
-                    <li v-for="Banneritem in Bannerlist" v-bind:key="Banneritem.id">  <a href="#"><img :src="require(`../assets/img/${Banneritem.image}`)" alt="">{{Banneritem.label}}</a></li>
-                    
+                    <Card v-for="Banneritem in Bannerlist" v-bind:key="Banneritem.id" :image="Banneritem.image" :label='Banneritem.label'/>  
                 </ul>
             </div>
         </div>
@@ -14,9 +13,14 @@
 
 
 <script>
+
+import Card from './Cardmodel.vue'
+
 export default {
   name: 'C3',
-  components:{},
+  components:{
+      Card,
+  },
       data() {
         return {
             Bannerlist: [
