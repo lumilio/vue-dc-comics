@@ -42,7 +42,6 @@ export default {
     @include layout-block-1;
     border-top: 15px solid $sie-color-1;
     background-color: white;
-
 }
 .centered-box{
     @include layout-block-2;

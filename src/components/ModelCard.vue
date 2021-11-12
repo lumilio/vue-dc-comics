@@ -21,11 +21,9 @@ export default {
 
 
 <style scoped lang="scss">
-
 .card-model {
 padding: 0.6rem;
 }
-
 .card-model img{
 width: 170px;
 height: 170px;
@@ -37,5 +35,4 @@ width: 120px;
 margin-top: 8px;
 margin-bottom: 16px;
 }
-
 </style>
