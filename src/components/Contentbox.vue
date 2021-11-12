@@ -7,12 +7,9 @@
                 <div class="card-container">
                     <Card v-for="Card in Cardlist" v-bind:key="Card.id" :thumb="Card.thumb" :series='Card.series'/>
                 </div>
-                <button>xxx</button>
+                <button>LOAD MORE</button>
             </div>
         </div>
-
-
-
     </div>
 </template>
 
@@ -139,10 +136,32 @@ export default {
     /* background-repeat: no-repeat */
 }
 .card-container{
+    margin-top: 25px;
     display: flex;
     font-size: small;
     justify-content: center;
-    width: 100%;
     flex-wrap: wrap;
+}
+.centered-box {
+    position: relative;
+}
+.centered-box span{
+    position: absolute;
+    background-color: $sie-color-2;
+    padding: 8px 35px;
+    color: white;
+    top: -20px;
+    left: 0;
+}
+.centered-box button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: $sie-color-2;
+    color: white;
+    padding: 7px 30px;
+    border: none;
+}
+.centered-box button:hover{
+    cursor: pointer;
 }
 </style>

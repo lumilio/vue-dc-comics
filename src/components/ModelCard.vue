@@ -23,7 +23,7 @@ export default {
 <style scoped lang="scss">
 
 .card-model {
-padding: 0.4rem;
+padding: 0.6rem;
 }
 
 .card-model img{
