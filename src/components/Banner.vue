@@ -44,6 +44,7 @@ export default {
 .layout-box{
     @include layout-block-1;
     background-color: $sie-color-2;
+    z-index: 1;
 }
 .centered-box{
     @include layout-block-2;
@@ -51,7 +52,7 @@ export default {
 #banner-list{
     padding: 0;
     display: flex;
-    margin: 20px 0;
+    margin: 30px 0;
     justify-content: space-between;
     width: 100%;
 }
