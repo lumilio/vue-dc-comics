@@ -35,12 +35,11 @@ export default {
 .box-C1{
     @include layout-block-1;
     position: sticky;
+    z-index: 2;
     top: 0;
 }
 .layout-box{
     @include layout-block-1;
-    position: sticky;
-    top: 0;
     border-top: 15px solid $sie-color-1;
     background-color: white;
 
